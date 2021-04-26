@@ -1,12 +1,11 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { LogsService } from 'src/logs/logs.service';
-import { MachinesService } from 'src/machines/machines.service';
-import { UsersService } from 'src/users/users.service';
+import { LogsService } from '../logs/logs.service';
+import { MachinesService } from '../machines/machines.service';
+import { UsersService } from '../users/users.service';
 import { Repository } from 'typeorm';
 import { CreateRequestDto } from './dto/create-request.dto';
 import { Request as Rq } from './entities/request.entity';
-import { Repair } from '../repairs/entities/repair.entity';
 
 @Injectable()
 export class RequestsService {

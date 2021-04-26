@@ -5,16 +5,13 @@ import {
   NotFoundException,
 } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { JwtPayload } from 'src/auth/interfaces/payload.interface';
-import { Not, Repository } from 'typeorm';
+import { JwtPayload } from '../auth/interfaces/payload.interface';
+import { Repository } from 'typeorm';
 
 import { CreateUserDto } from './dto/create-user.dto';
 import { LoginUserDto } from './dto/login-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
-import { IsNull } from 'typeorm';
 import { User } from './entities/user.entity';
-import { Role } from './entities/role.enum';
-import { Request } from 'src/requests/entities/request.entity';
 
 @Injectable()
 export class UsersService {

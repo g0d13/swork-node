@@ -1,8 +1,8 @@
-import { BeforeInsert, Column, Entity, JoinColumn, OneToOne } from 'typeorm';
+import { BeforeInsert, Column, Entity, OneToOne } from 'typeorm';
 import * as bcrypt from 'bcrypt';
 import { EntityWithData } from '../../utils/EntityWithData';
 import { Role } from './role.enum';
-import { Log } from 'src/logs/entities/log.entity';
+import { Log } from '../../logs/entities/log.entity';
 
 @Entity()
 export class User extends EntityWithData {

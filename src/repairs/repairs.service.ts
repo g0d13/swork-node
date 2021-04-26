@@ -5,7 +5,6 @@ import { Repair } from './entities/repair.entity';
 import { Repository } from 'typeorm';
 import { UsersService } from '../users/users.service';
 import { RequestsService } from '../requests/requests.service';
-import { log } from 'util';
 
 @Injectable()
 export class RepairsService {

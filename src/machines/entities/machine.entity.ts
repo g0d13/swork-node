@@ -1,4 +1,4 @@
-import { EntityWithData } from 'src/utils/EntityWithData';
+import { EntityWithData } from '../../utils/EntityWithData';
 import { Column, Entity } from 'typeorm';
 
 @Entity()

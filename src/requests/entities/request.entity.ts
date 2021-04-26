@@ -1,9 +1,9 @@
-import { Log } from 'src/logs/entities/log.entity';
-import { Machine } from 'src/machines/entities/machine.entity';
-import { User } from 'src/users/entities/user.entity';
-import { EntityWithData } from 'src/utils/EntityWithData';
-import { Scale } from 'src/utils/Scale.enum';
-import { Column, Entity, JoinColumn, ManyToOne, OneToOne } from "typeorm";
+import { Log } from '../../logs/entities/log.entity';
+import { Machine } from '../../machines/entities/machine.entity';
+import { User } from '../../users/entities/user.entity';
+import { EntityWithData } from '../../utils/EntityWithData';
+import { Scale } from '../../utils/Scale.enum';
+import { Column, Entity, JoinColumn, ManyToOne, OneToOne } from 'typeorm';
 
 @Entity()
 export class Request extends EntityWithData {
