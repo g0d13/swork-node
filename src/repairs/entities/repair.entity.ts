@@ -1,8 +1,8 @@
-import { User } from 'src/users/entities/user.entity';
-import { EntityWithData } from 'src/utils/EntityWithData';
-import { Scale } from 'src/utils/Scale.enum';
-import { Column, Entity, JoinColumn, ManyToOne, OneToOne } from 'typeorm';
-import { Request } from 'src/requests/entities/request.entity';
+import { User } from '../../users/entities/user.entity';
+import { EntityWithData } from '../../utils/EntityWithData';
+import { Scale } from '../../utils/Scale.enum';
+import { Column, Entity, JoinColumn, ManyToOne } from 'typeorm';
+import { Request } from '../../requests/entities/request.entity';
 
 @Entity()
 export class Repair extends EntityWithData {

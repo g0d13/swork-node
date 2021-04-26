@@ -1,4 +1,4 @@
-import { Scale } from 'src/utils/Scale.enum';
+import { Scale } from '../../utils/Scale.enum';
 
 export class CreateRequestDto {
   description: string;

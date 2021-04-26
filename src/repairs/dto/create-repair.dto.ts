@@ -1,5 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { Scale } from 'src/utils/Scale.enum';
+import { Scale } from '../../utils/Scale.enum';
 
 export class CreateRepairDto {
   @ApiProperty()
